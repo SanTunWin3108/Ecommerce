@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Pacifico&display=swap');
+
+body {
+    font-family: 'League Spartan', sans-serif;
+}
+
+.navbar {
+    background-color: rgb(15, 146, 146);
+    box-shadow: 0 0 20px black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+}
+
+.navbar-light .navbar-brand {
+    font-family: 'Pacifico', sans-serif;
+    font-size: 2.2rem;
+    color: #fff;
+    transition: all .4s;
+}
+
+.navbar-light .navbar-brand:hover {
+    color: rgb(209, 205, 205);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 1.4rem;
+    margin-left: 10px;
+    margin-top: 10px;
+    transition: all .4s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: gold;
+}
+
+.navbar-light .navbar-nav .nav-link.activeTab {
+    color: gold;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url(image/menu.png);
+    width: 40px;
+    height: 40px;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: rgb(15, 146, 146);
+    outline: none;
+}
+
+.header {
+    background-image: url(image/fasionGirl.png);
+    min-height: 100vh;
+    background-color: rgb(15, 146, 146);
+    background-position: top;
+    background-size: cover;
+}
+
+.header {
+    position: relative;
+}
+
+.headerText {
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+
+.headerText h1 {
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.header p {
+    font-size: 1.3rem;
+    color: rgb(209, 205, 205);
+}
+
+.headerText button {
+    width: 120px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card {
+    transition: all .4s;
+}
+
+.card:hover {
+    border-color: none;
+    box-shadow: 0px 0px 10px 2px rgb(197, 199, 201);
+}
+
+.h1-font {
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.p-font {
+    font-size: 1.3rem;
+    color: rgb(82, 79, 79);
+}
+
+.cardBody p {
+    font-size: 1.2rem;
+    line-height: 0.5;
+}
+
+.stars i {
+    color: goldenrod;
+}
+
+.priceAndCart span {
+    color: rgb(8, 87, 87);
+    margin-top: 5px;
+}
+
+.priceAndCart i {
+    color: rgb(8, 87, 87);
+    padding-right: 2px;
+    transition: all .5s;
+}
+
+.priceAndCart div {
+    width: 45px;
+    height: 45px;
+    background-color: rgba(15, 146, 146, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    user-select: none;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.priceAndCart div:hover i {
+    color: #fff;
+}
+
+.priceAndCart div:hover {
+    background-color: rgb(8, 87, 87);
+}
+
+.banner {
+    background-image: linear-gradient(rgba(53, 51, 51, 0.6), rgba(48, 45, 45, 0.6)), url(image/bannerImage.webp);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.banner-box1 {
+    background-image: linear-gradient(rgba(235, 120, 13, 0.4), rgba(224, 89, 10, 0.4)), url(image/banner1.jpeg);
+    background-size: cover;
+    background-position: right;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.second-banner-box1 {
+    background-image: linear-gradient(rgba(48, 43, 39, 0.7), rgba(29, 27, 26, 0.7)), url(image/banner2.jpeg);
+}
+
+
+.banner-box2 {
+    background-image: linear-gradient(rgba(48, 43, 39, 0.7), rgba(29, 27, 26, 0.7)), url(image/banner3.jpeg);
+;
+    padding: 5rem 2rem;
+    background-size: cover;
+    background-position: top;
+    height: 240px;
+}
+
+.second-banner-box2 {
+    background-image: linear-gradient(rgba(48, 43, 39, 0.7), rgba(29, 27, 26, 0.7)), url(image/banner4.jpeg);
+;
+}
+
+.third-banner-box2 {
+    background-image: linear-gradient(rgba(48, 43, 39, 0.7), rgba(29, 27, 26, 0.7)), url(image/banner5.jpeg);
+;
+}
+
+.newsletter {
+    background-image: linear-gradient(rgba(4, 21, 48, 0.6), rgba(4, 21, 44, 0.6)), url(image/landscape.jpg);
+    padding: 3rem 0;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.signUpBtn {
+    background-color: rgb(15, 146, 146);
+    border-color: rgb(15, 146, 146);
+    color: #fff;
+    user-select: none;
+    cursor: pointer;
+}
+
+.footerLogo {
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-family: 'Pacifico', sans-serif;
+    color: #000;
+    font-weight: bold;
+}
+
+.footer p {
+    line-height: 1;
+    margin-bottom: 7px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.icons i {
+    margin-right: 10px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.logoContainer img {
+    width: 150px;
+    height: 50px;
+    margin-right: 10px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.logoContainer {
+    display: flex;
+    margin-top: 10px;
+}
+
+.visaImg {
+    width: 300px;
+}
+
+.shopBanner {
+    background-image: linear-gradient(rgba(4, 21, 48, 0.8), rgba(4, 21, 44, 0.8)), url(image/shopHeaderImage.jpg);
+}
+
+.shopBanner h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.paginationContainer div {
+    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(15, 146, 146);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    user-select: none;
+    cursor: pointer;
+}
+
+select {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    height: 50px;
+    width: 150px;
+}
+
+.inputAndBtn input {
+    width: 50px;
+    height: 50px;
+    padding-left: 10px;
+    line-height: 50px;
+    font-size: 1.2rem;
+}
+
+.inputAndBtn button {
+    height: 50px;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    transition: all .4s;
+    border: none;
+}
+
+.officeBanner{
+    background-image: linear-gradient(rgba(4, 21, 48, 0.8), rgba(4, 21, 44, 0.8)), url(image/officeRoom.webp);
+}
+
+.officeBanner h1 {
+    font-size: 3rem;
+}
+
+.blog img {
+    width: 100%;
+    object-fit: cover;
+    height: 320px;
+}
+
+.blog span {
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background-color: #000;
+    margin-left: 20px;
+    margin-bottom: 3px;
+}
+
+.blogImage {
+    position: relative;
+}
+
+.date {
+    position: absolute;
+    top: -50px;
+    font-size: 4rem;
+    font-weight: bold;
+    z-index: -1;
+    color: rgb(126, 121, 121);
+}
+
+.blog p {
+    line-height: 1.2;
+}
+
+.margin-bottom-8 {
+    margin-bottom: 8rem;
+}
+
+.aboutBanner {
+    background-image: linear-gradient(rgba(4, 21, 48, 0.8), rgba(4, 21, 44, 0.8)), url(image/landscape.jpg);
+}
+
+.aboutBanner h1 {
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+.about h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 0.8;
+}
+
+
+.about p {
+    line-height: 1.2;
+    text-align: justify;
+}
+
+.app h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.app h1 a {
+    color: rgb(84, 22, 143);
+    transition: all .4s;
+}
+
+.app h1 a:hover {
+    color: rgb(118, 22, 209);
+}
+
+.videoContainer {
+    height: 400px;
+    background-color: rgb(51, 13, 87);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.videoContainer video {
+    width: 300px;
+    height: 100%;
+}
+
+textarea {
+    resize: none;
+}
+
+.profile img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.gray {
+    color: gray;
+}
+
+.profile p {
+    line-height: 0.65;
+}
+
+table img {
+    width: 80px;
+    height: 80px;
+}
+
+table i {
+    color: red;
+    user-select: none;
+    cursor: pointer;
+}
+
+table input {
+    width: 80px;
+    height: 40px;
+    padding-left: 10px;
+    line-height: 40px;
+}
+
+
+
+@media (max-width: 576px) {
+    .headerText h1 {
+        font-size: 3rem;
+    }
+
+    .header p {
+        color: #fff;
+    }
+
+    .about p {
+        line-height: 1.2;
+        text-align: start;
+    }
+
+    .videoContainer {
+        height: 250px;
+    }
+
+    .profile {
+        flex-direction: column;
+    }
+
+    .profile h5 {
+        margin: 0.8rem 0;
+    }
+
+    .cartBanner h1 {
+        font-size: 3rem;
+    }
+    
+}

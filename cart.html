@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../Resources/css/all.min.css">
+    <link rel="stylesheet" href="../ResourcesTwo/css/bootstrap.min.css"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Ecommerce : Bootstrap 5 Exercise 3</title>
+</head>
+<body>
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-lg navbar-light py-2">
+        <div class="container">
+          <a class="navbar-brand" href="#">Kira</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="product.html">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html" >About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html" >Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  activeTab" href="cart.html" >
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+     <!-- Banner1 -->
+    <section class="aboutBanner cartBanner banner py-5 mb-5">
+        <div class="container-fluid pt-5">
+            <div class="row py-5">
+                <div class="col-12 text-center text-white">
+                    <h1>#shopping_cart</h1>
+                    <h3>Thank You</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product table -->
+    <section class="product-table py-5">
+        <div class="container">
+            <div class="row">
+              <div style="overflow-x: auto;">
+                <table class="table text-center">
+                  <thead>
+                    <tr class="fs-4">
+                      <th scope="col">Remove</th>
+                      <th scope="col">Image</th>
+                      <th scope="col">Product</th>
+                      <th scope="col">Price</th>
+                      <th scope="col">Quantity</th>
+                      <th scope="col">Subtotal</th>
+                    </tr>
+                  </thead>
+                  <tbody class="fs-5">
+                    <tr>
+                      <th scope="row" class="align-middle"><i class="far fa-times-circle"></i></th>
+                      <td><img src="image/shirt1.jpg" alt="" class="align-middle"></td>
+                      <td class="align-middle">Summer T-shirt One</td>
+                      <td class="align-middle">$118.19</td>
+                      <td class="align-middle"><input type="number" value="1" min="1"></td>
+                      <td class="align-middle">$118.19</td>
+                    </tr>
+  
+                    <tr>
+                      <th scope="row" class="align-middle"><i class="far fa-times-circle"></i></th>
+                      <td><img src="image/shirt2.jpg" alt="" class="align-middle"></td>
+                      <td class="align-middle">Summer T-shirt Two</td>
+                      <td class="align-middle">$118.19</td>
+                      <td class="align-middle"><input type="number" value="1" min="1"></td>
+                      <td class="align-middle">$118.19</td>
+                    </tr>
+  
+                    <tr>
+                      <th scope="row" class="align-middle"><i class="far fa-times-circle"></i></th>
+                      <td><img src="image/shirt3.jpg" alt="" class="align-middle"></td>
+                      <td class="align-middle">Summer T-shirt Three</td>
+                      <td class="align-middle">$118.19</td>
+                      <td class="align-middle"><input type="number" value="1" min="1"></td>
+                      <td class="align-middle">$118.19</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coupon and Totals -->
+    <section class="couponAndTotal pb-5">
+        <div class="container pb-5">
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <h4 class="fw-bold">Apply Coupon</h4>
+                    <div class="d-flex">
+                      <input type="text" class="form-control fs-5 me-2" placeholder="Enter your coupon">
+                      <button class="btn btn-success fs-5 px-4">Apply</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="p-4 border">
+                      <h4 class="fw-bold">Cart Totals</h4>
+                      <table class="table">
+                        <tbody>
+                            <tr>
+                              <td class="border fs-5">Cart Subtotal</td>
+                              <td class="border fs-5">$335</td>
+                            </tr>
+
+                            <tr>
+                              <td class="border fs-5">Shipping</td>
+                              <td class="border fs-5">Free</td>
+                            </tr>
+
+                            <tr>
+                              <th class="border fs-5">Total</td>
+                              <th class="border fs-5">$335</td>
+                            </tr>
+                        </tbody>
+                      </table>
+
+                      <button class="btn btn-success fs-5 px-4">Proceed To Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer pb-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-5 col-sm-6">
+            <a href="" class="footerLogo">Kira</a>
+            <h5 class="mt-4 fw-bold">Contact</h5>
+            <p>Address: 562 Wellington Road, Street 32, San Francisco</p>
+            <p>Phone: +01 2222 365 / (+91) 01 2345 6789</p>
+            <p>Hours: 10:00 - 18:00, Mon - Sat</p>
+
+            <h5 class="mt-5 fw-bold">Follow us</h5>
+            <div class="icons">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-pinterest-p"></i>
+              <i class="fab fa-youtube"></i>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 col-sm-4 mt-3">
+            <h5 class="fw-bold">About</h5>
+            <p>About us</p>
+            <p>Delivery Information</p>
+            <p>Privacy Policy</p>
+            <p>Terms & Conditions</p>
+            <p>Contact Us</p>
+          </div>
+
+          <div class="col-lg-2 col-md-3 col-sm-4 mt-3">
+            <h5 class="fw-bold">My Account</h5>
+            <p>Sign In</p>
+            <p>View Cart</p>
+            <p>My Wishlist</p>
+            <p>Track My Order</p>
+            <p>Help</p>
+          </div>
+
+          <div class="col-lg-4 col-md-5 col-sm-4 mt-3">
+            <h5 class="fw-bold">Install App</h5>
+            <p>From App Store or Google Play</p>
+            <div class="logoContainer">
+              <img src="image/apple.webp" alt="" class="apple">
+              <img src="image/google.webp" alt="" class="google">
+            </div>
+            <div class="visaCard mt-5">
+              <p>Secure Payment</p>
+              <img src="image/visa2.png" alt="" class="visaImg">
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-12">
+            <h4 class="text-center">@ 2022, DarkGhost etc - HTML CSS Bootstrap 5 Ecommerce Template</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <!--  <script src="../ResourcesTwo/js/bootstrap.min.js"></script> -->
+
+   <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
